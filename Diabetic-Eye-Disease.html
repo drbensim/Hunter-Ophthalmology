@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Title + Description -->
+  <title>Diabetic Retinopathy &amp; Diabetic Macular Oedema (DMO) Q&amp;A | Hunter Ophthalmology Charlestown NSW</title>
+  <meta name="description"
+    content="Answers to common diabetic retinopathy and diabetic macular oedema (DMO/DME) questions from Hunter Ophthalmology (Charlestown, NSW). Learn causes, symptoms, Amsler grid monitoring, diagnosis, anti-VEGF injections, laser treatment, risks, follow-up, and when to seek urgent care." />
+
+  <!-- SEO: Canonical (replace with your real URL) -->
+  <link rel="canonical" href="https://www.example.com/diabetic-retinopathy-dmo-qa" />
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Social: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hunter Ophthalmology" />
+  <meta property="og:title" content="Diabetic Retinopathy & Diabetic Macular Oedema (DMO) Q&A | Hunter Ophthalmology" />
+  <meta property="og:description"
+    content="Clear, practical answers to diabetic retinopathy and DMO (DME) questions from Hunter Ophthalmology (Charlestown, NSW)." />
+  <meta property="og:url" content="https://www.example.com/diabetic-retinopathy-dmo-qa" />
+  <meta property="og:image" content="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324794/DME_ijmxen.png" />
+
+  <!-- Social: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="Diabetic Retinopathy & Diabetic Macular Oedema (DMO) Q&A | Hunter Ophthalmology" />
+  <meta name="twitter:description"
+    content="Clear, practical answers to diabetic retinopathy and DMO (DME): symptoms, diagnosis, injections, risks, and follow-up." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324794/DME_ijmxen.png" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: {
+                700: "#0f2d0a",
+                800: "#0b2107",
+                900: "#071805",
+              },
+              peach: {
+                200: "#ffd5b5",
+                300: "#ffc39e",
+                500: "#e28d5b",
+              },
+              slatewash: {
+                50: "#eef1f4",
+                100: "#e4e8ec",
+              },
+            },
+          },
+        },
+      };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .brand-font {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 0.12rem;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      color: rgba(0, 0, 0, 0.62);
+      font-weight: 500;
+    }
+
+    .page-pad {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .page-pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .brand-subtitle {
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-pad {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    /* Q&A styling (accordion) */
+    .qa details {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.92);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .qa details+details {
+      margin-top: 14px;
+    }
+
+    .qa summary {
+      cursor: pointer;
+      list-style: none;
+      outline: none;
+      user-select: none;
+    }
+
+    .qa summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .qa .chev {
+      transition: transform 240ms ease;
+    }
+
+    .qa details[open] .chev {
+      transform: rotate(180deg);
+    }
+
+    .qa summary:focus-visible {
+      box-shadow: 0 0 0 4px rgba(226, 141, 91, 0.28);
+      border-radius: 14px;
+    }
+
+    .qa details>div {
+      transition: opacity 200ms ease, transform 200ms ease;
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+
+    .qa details[open]>div {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .qa-img {
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .embed-16x9 {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .embed-16x9 iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .toc-card {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 245, 238, 0.96);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    :root {
+      --header-offset: 96px;
+    }
+
+    .anchor {
+      scroll-margin-top: var(--header-offset);
+    }
+
+    figure figcaption {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 0.95rem;
+    }
+  </style>
+
+  <!-- Structured Data: MedicalClinic -->
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Hunter Ophthalmology",
+        "url": "https://www.example.com",
+        "telephone": "+61-2-4943-3199",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 Smith St",
+          "addressLocality": "Charlestown",
+          "addressRegion": "NSW",
+          "postalCode": "2290",
+          "addressCountry": "AU"
+        },
+        "medicalSpecialty": "Ophthalmology"
+      }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is diabetic retinopathy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diabetic retinopathy is an eye condition caused by diabetes damaging the small blood vessels in the retina. Over time, high blood sugar levels can weaken these vessels, causing them to leak or bleed. This can affect vision if not treated. It often develops without early symptoms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is diabetic macular oedema (DMO)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DMO occurs when fluid leaks into the macula, the central part of the retina responsible for sharp vision. This swelling can cause blurred or distorted central vision. It is a common complication of diabetic retinopathy. Early treatment helps protect vision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How did I develop this condition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diabetic retinopathy develops due to long-term high blood sugar levels damaging the retinal blood vessels. The longer you have diabetes, the higher the risk. Poor control of blood sugar, blood pressure, and cholesterol increases the chance of developing it. Even well-controlled diabetics can develop changes over time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does diabetes affect my body in general?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diabetes affects your body because high blood sugar levels over time can damage blood vessels and nerves. This can impact many organs, including your eyes (causing diabetic retinopathy), kidneys, heart, and brain, increasing the risk of heart attack and stroke. It can also affect circulation in your legs and feet, leading to numbness, slow healing, or infections. You may feel tired, thirsty, or need to urinate more often when blood sugar is high. With good control of blood sugar, blood pressure, and cholesterol, many of these complications can be prevented or delayed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I better control my blood sugar levels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To better control blood sugar: eat a balanced low-glycaemic diet; spread carbohydrates through the day; exercise regularly; take medications/insulin as prescribed; monitor glucose regularly. Continuous glucose monitoring (e.g., FreeStyle Libre or Dexcom) can help track trends without frequent finger pricks. Keep regular appointments with your diabetes care team to adjust your plan and check for complications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What symptoms should I be watching for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Early stages may have no symptoms. As it progresses, you may notice blurred vision, floaters, dark spots, or difficulty reading. Sudden vision changes require urgent attention. Regular eye checks are essential because damage can occur before symptoms appear. An Amsler grid is a simple tool you can use at home to help monitor your central vision; if you notice new distortion or missing areas, contact your eye doctor promptly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use an Amsler grid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wear reading glasses (if you use them) and hold the grid at your normal reading distance in good light. Cover one eye and focus on the central dot. While staring at the dot, notice whether lines look wavy, blurred, distorted, or missing. Repeat with the other eye. If you see new distortion, dark patches, or missing areas, contact your eye doctor promptly. Check regularly, such as weekly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I go blind?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people do not go blind if diabetic eye disease is detected early and treated appropriately. However, untreated advanced disease can cause severe vision loss. Good diabetes control and regular eye monitoring greatly reduce this risk. Early treatment is very effective."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is diabetic retinopathy diagnosed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is diagnosed during a dilated eye examination. Your doctor will examine the retina and may take photographs or scans. These tests are painless. Regular screening is recommended for all people with diabetes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is diabetic retinopathy treated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Treatment depends on the stage. Early stages may only require monitoring and improved diabetes control. More advanced stages may need laser treatment, injections into the eye, or occasionally surgery. The goal is to prevent further vision loss."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is diabetic macular oedema (DMO) treated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DMO is usually treated with anti-VEGF injections into the eye to reduce swelling. Sometimes steroid injections or implants are used. Laser treatment may also be considered in certain cases. Treatment aims to reduce fluid and stabilise vision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I need injections? How often?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you have DMO, you may need regular injections, especially at the beginning. These may start monthly and then reduce in frequency depending on response. The schedule is tailored to your eye’s condition and ongoing monitoring is important."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I just need one treatment of injection for DMO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Treatment for DMO is usually not a one-off injection. Most patients require a series of injections, especially at the beginning, to reduce swelling. Treatment often starts with monthly injections and is adjusted depending on response. Some people need ongoing injections long term; others can space treatments further apart. Regular monitoring is essential because DMO can recur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How frequently will i need my eye injections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most patients begin with 4-weekly injections until the fluid has settled and the condition is stable. If the macula improves, the interval is extended in 2-week steps (e.g., 4 to 6 to 8 weeks) provided there is no recurrence. Not everyone can tolerate longer gaps. The longest interval is often up to 16 weeks if the eye remains stable. Regular monitoring is essential."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I ever be able to stop my injections for DMO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is possible in some patients. This depends on response to treatment and how well blood sugar levels are controlled. If swelling settles and diabetes is well managed, injections may be reduced or stopped. However, DMO can return, so regular follow-up is essential. Good diabetes control plays a major role in reducing the need for ongoing treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the injections painful or risky?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The eye is numbed before the injection, so discomfort is minimal and most patients tolerate injections very well. Serious complications are rare but can include infection or inflammation. Your doctor will explain the risks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the risks of an eye injection?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Eye injections are generally very safe, but risks include rare infection inside the eye (endophthalmitis), bleeding, retinal detachment, inflammation, increased eye pressure, or cataract formation. More common mild side effects include temporary redness, irritation, watery eyes, or a gritty sensation for a day or two. Precautions are taken to minimise risk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do after my injection?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your eye may feel slightly irritated or watery for a day or two. Do not rub your eye. Avoid swimming, hot tubs, or getting pool or ocean water in your eye for at least one week. Use any prescribed drops as directed and watch for increasing pain, worsening vision, or significant redness—if these occur, contact your doctor immediately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can controlling my diabetes help my eyes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Good control of blood sugar, blood pressure, and cholesterol significantly reduces the risk of progression. Healthy diet, exercise, and regular medical care are very important. Managing your diabetes is one of the best ways to protect your vision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can this happen in my other eye?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is possible, especially if underlying risk factors are not controlled. Managing blood pressure, diabetes, cholesterol, and avoiding smoking reduces risk. Regular eye checks are important."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I have my eyes checked?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people with diabetes should have an eye exam at least once a year. If changes are detected, visits may be more frequent. Regular monitoring helps detect problems early and early treatment gives better outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I still drive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many people with diabetic retinopathy can continue driving if their vision meets legal standards. However, significant vision loss may affect driving ability. Your doctor can advise you based on your vision tests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if my vision suddenly changes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you notice sudden blurred vision, new floaters, flashes, or a dark curtain over your vision, seek urgent medical attention. Sudden changes may indicate bleeding or retinal detachment. Prompt treatment is important."
+            }
+          }
+        ]
+      }
+  </script>
+</head>
+
+<body class="bg-white text-black antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-slatewash-50 border-b border-black/10">
+    <div class="max-w-7xl mx-auto page-pad py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div class="leading-tight">
+        <a href="index.html" class="brand-font font-semibold text-lg hover:opacity-80 transition">
+          Hunter Ophthalmology
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8 text-black/80">
+        <a href="index.html" class="hover:text-black transition">Home</a>
+
+        <div class="relative group">
+          <span
+            class="inline-flex items-center gap-1 cursor-default"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Patient Resources
+            <span class="text-black/60">⌄</span>
+          </span>
+
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                     group-hover:opacity-100 group-hover:visible
+                     group-focus-within:opacity-100 group-focus-within:visible
+                     transition">
+            <div class="min-w-[260px] rounded-xl border border-black/10 bg-white shadow-lg">
+              <a href="patient-information.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-t-xl">
+                Patient Information
+              </a>
+
+              <a href="our-doctors.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                Our Doctors
+              </a>
+
+              <div class="relative group/conditions">
+                <a href="index.html#conditions-treated"
+                  class="flex items-center justify-between px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-b-xl">
+                  Conditions treated
+                  <span class="text-black/50">›</span>
+                </a>
+
+                <div class="absolute top-0 left-full ml-1 opacity-0 invisible z-50
+                           group-hover/conditions:opacity-100 group-hover/conditions:visible
+                           group-focus-within/conditions:opacity-100 group-focus-within/conditions:visible
+                           transition">
+                  <div class="min-w-[340px] rounded-xl border border-black/10 bg-white shadow-lg overflow-hidden">
+                    <a href="cataract.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Cataract</a>
+                    <a href="pterygium.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Pterygium</a>
+                    <a href="glaucoma.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Glaucoma</a>
+                    <a href="age-related-macular-degeneration.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Age-Related Macular Degeneration
+                    </a>
+                    <a href="diabetic-eye-disease.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Diabetic Eye Disease
+                    </a>
+                    <a href="retinal-vein-occlusion.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Retinal Vein Occlusion
+                    </a>
+                    <a href="blepharoplasty.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Blepharoplasty
+                    </a>
+                    <a href="periocular-skin-cancer-excision-and-reconstruction.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Periocular Skin cancer excision &amp; reconstruction
+                    </a>
+                    <a href="ectropion-and-entropion-repair.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Ectropion &amp; Entropion repair
+                    </a>
+                    <a href="botox-for-facial-spasms.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Botox for Facial Spasms
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="referrers.html" class="hover:text-black transition">Referrers</a>
+        <a href="contact.html" class="hover:text-black transition">Contact</a>
+      </nav>
+
+      <!-- Right side button -->
+      <a href="contact.html"
+        class="hidden md:inline-flex rounded-lg bg-peach-300 text-black font-bold px-5 py-2.5 hover:bg-peach-200 transition">
+        Book an appointment
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-black/10 bg-white px-3 py-2"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i data-feather="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </header>
+</body>
+
+<!-- MAIN CONTENT -->
+<main class="w-full bg-white">
+  <section class="max-w-7xl mx-auto page-pad py-16 md:py-20">
+    <div class="max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
+        Diabetic Retinopathy &amp; Diabetic Macular Oedema (DMO) Q&amp;A
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-black/70">
+        Clear, practical answers to common diabetic retinopathy and diabetic macular oedema (DMO / DME) questions.
+      </p>
+    </div>
+
+    <!-- Jump to -->
+    <div class="mt-10 max-w-4xl toc-card p-6">
+      <h2 class="text-xl md:text-2xl font-semibold">Jump to a question</h2>
+      <p class="mt-2 text-black/70">Tap a question to jump straight to the answer.</p>
+
+      <ul class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2 text-black/85">
+        <li><a class="hover:underline" href="#q1">What is diabetic retinopathy?</a></li>
+        <li><a class="hover:underline" href="#q2">What is diabetic macular oedema (DMO)?</a></li>
+        <li><a class="hover:underline" href="#q3">How did I develop this condition?</a></li>
+        <li><a class="hover:underline" href="#q4">How does diabetes affect my body in general?</a></li>
+        <li><a class="hover:underline" href="#q5">How do I better control my blood sugar levels?</a></li>
+        <li><a class="hover:underline" href="#q6">What symptoms should I be watching for?</a></li>
+        <li><a class="hover:underline" href="#q7">How do I use an Amsler grid?</a></li>
+        <li><a class="hover:underline" href="#q8">Will I go blind?</a></li>
+        <li><a class="hover:underline" href="#q9">How is diabetic retinopathy diagnosed?</a></li>
+        <li><a class="hover:underline" href="#q10">How is diabetic retinopathy treated?</a></li>
+        <li><a class="hover:underline" href="#q11">How is diabetic macular oedema (DMO) treated?</a></li>
+        <li><a class="hover:underline" href="#q12">Will I need injections? How often?</a></li>
+        <li><a class="hover:underline" href="#q13">Will I just need one treatment of injection for DMO?</a></li>
+        <li><a class="hover:underline" href="#q14">How frequently will I need my eye injections?</a></li>
+        <li><a class="hover:underline" href="#q15">Will I ever be able to stop my injections for DMO?</a></li>
+        <li><a class="hover:underline" href="#q16">Are the injections painful or risky?</a></li>
+        <li><a class="hover:underline" href="#q17">What are the risks of an eye injection?</a></li>
+        <li><a class="hover:underline" href="#q18">What should I do after my injection?</a></li>
+        <li><a class="hover:underline" href="#q19">Can controlling my diabetes help my eyes?</a></li>
+        <li><a class="hover:underline" href="#q20">Can this happen in my other eye?</a></li>
+        <li><a class="hover:underline" href="#q21">How often should I have my eyes checked?</a></li>
+        <li><a class="hover:underline" href="#q22">Can I still drive?</a></li>
+        <li><a class="hover:underline" href="#q23">What should I do if my vision suddenly changes?</a></li>
+      </ul>
+    </div>
+
+    <div class="qa mt-10 max-w-4xl">
+      <!-- Q1 -->
+      <details id="q1" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What is diabetic retinopathy?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Diabetic retinopathy is an eye condition caused by diabetes damaging the small blood vessels in the
+              retina. Over time,
+              high blood sugar levels can weaken these vessels, causing them to leak or bleed. This can affect vision
+              if not treated.
+              It often develops without early symptoms.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q2 (IMAGE) -->
+      <details id="q2" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What is diabetic macular oedema (DMO)?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              DMO occurs when fluid leaks into the macula, the central part of the retina responsible for sharp
+              vision. This swelling
+              can cause blurred or distorted central vision. It is a common complication of diabetic retinopathy.
+              Early treatment
+              helps protect vision.
+            </p>
+
+            <div class="qa-img mt-6">
+              <img
+                    src="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324794/DME_ijmxen.png"
+                    alt="Diabetic macular oedema (DMO/DME) diagram showing fluid and swelling in the macula"
+                    class="w-full h-auto"
+                    loading="lazy"
+                    width="1200"
+                    height="600"
+                  />
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q3 -->
+      <details id="q3" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How did I develop this condition?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Diabetic retinopathy develops due to long-term high blood sugar levels damaging the retinal blood
+              vessels. The longer
+              you have diabetes, the higher the risk. Poor control of blood sugar, blood pressure, and cholesterol
+              increases the
+              chance of developing it. Even well-controlled diabetics can develop changes over time.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q4 -->
+      <details id="q4" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How does diabetes affect my body in general?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Diabetes affects your body because high blood sugar levels over time can damage blood vessels and
+              nerves. This can
+              impact many organs, including your eyes (causing diabetic retinopathy), kidneys, heart, and brain,
+              increasing the risk
+              of heart attack and stroke. It can also affect circulation in your legs and feet, leading to numbness,
+              slow healing, or
+              infections. You may feel tired, thirsty, or need to urinate more often when blood sugar is high. The
+              good news is that
+              with good control of blood sugar, blood pressure, and cholesterol, many of these complications can be
+              prevented or
+              delayed.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q5 -->
+      <details id="q5" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How do I better control my blood sugar levels?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>To better control your blood sugar levels, focus on a combination of healthy lifestyle habits and
+              regular monitoring:</p>
+            <ul class="mt-3 list-disc list-inside space-y-2">
+              <li>
+                Eat a balanced, low-glycaemic diet with plenty of vegetables, lean proteins, and whole grains, and
+                limit sugary or
+                highly processed foods.
+              </li>
+              <li>Spread your carbohydrate intake evenly throughout the day to avoid big spikes in your blood sugar.
+              </li>
+              <li>
+                Stay active with regular exercise—walking, cycling, swimming, or whatever you enjoy—because physical
+                activity helps
+                your body use insulin more effectively.
+              </li>
+              <li>Take your medications or insulin exactly as prescribed by your doctor.</li>
+              <li>
+                Monitor your blood glucose regularly so you can see how food, activity, and medications affect your
+                levels. Continuous
+                glucose monitoring devices like Bluetooth-enabled patches (e.g., FreeStyle Libre or Dexcom) allow you
+                to track your
+                levels throughout the day and night without frequent finger pricks. These devices can help you and
+                your care team spot
+                trends and adjust your plan sooner.
+              </li>
+              <li>
+                Keep regular appointments with your diabetes care team to adjust your plan as needed and check for
+                complications.
+              </li>
+            </ul>
+            <p class="mt-4">
+              Working closely with your doctor and diabetes educator to tailor these steps to your lifestyle will give
+              you the best
+              chance of keeping your blood sugar in your target range.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q6 -->
+      <details id="q6" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What symptoms should I be watching for?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Early stages may have no symptoms. As it progresses, you may notice blurred vision, floaters, dark
+              spots, or difficulty
+              reading. Sudden vision changes require urgent attention. Regular eye checks are essential because damage
+              can occur
+              before symptoms appear. An Amsler grid is a simple tool you can use at home to help monitor your central
+              vision and
+              detect early changes—if you notice any new distortion or missing areas on the grid, contact your eye
+              doctor promptly.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q7 -->
+      <details id="q7" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How do I use an Amsler grid?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              To use an Amsler grid, wear your reading glasses (if you use them) and hold the grid at your normal
+              reading distance in
+              good light. Cover one eye and focus on the central dot with the uncovered eye. While staring at the dot,
+              notice whether
+              any of the surrounding lines look wavy, blurred, distorted, or missing. Repeat the test with the other
+              eye. If you see
+              new distortion, dark patches, or missing areas, contact your eye doctor promptly. Try to check your
+              vision with the grid
+              regularly, such as once a week.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q8 -->
+      <details id="q8" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Will I go blind?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Most people do not go blind if diabetic eye disease is detected early and treated appropriately.
+              However, untreated
+              advanced disease can cause severe vision loss. Good diabetes control and regular eye monitoring greatly
+              reduce this
+              risk. Early treatment is very effective.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q9 -->
+      <details id="q9" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How is diabetic retinopathy diagnosed?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              It is diagnosed during a dilated eye examination. Your doctor will examine the retina and may take
+              photographs or scans.
+              These tests are painless. Regular screening is recommended for all people with diabetes.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q10 -->
+      <details id="q10" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How is diabetic retinopathy treated?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Treatment depends on the stage. Early stages may only require monitoring and improved diabetes control.
+              More advanced
+              stages may need laser treatment, injections into the eye, or occasionally surgery. The goal is to
+              prevent further vision
+              loss.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q11 -->
+      <details id="q11" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How is diabetic macular oedema (DMO) treated?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              DMO is usually treated with anti-VEGF injections into the eye to reduce swelling. Sometimes steroid
+              injections or
+              implants are used. Laser treatment may also be considered in certain cases. Treatment aims to reduce
+              fluid and stabilise
+              vision.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q12 -->
+      <details id="q12" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Will I need injections? How often?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              If you have DMO, you may need regular injections, especially at the beginning of treatment. These may
+              start monthly and
+              then reduce in frequency depending on your response. The schedule is tailored to your eye’s condition.
+              Ongoing monitoring
+              is important.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q13 -->
+      <details id="q13" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Will I just need one treatment of injection for DMO?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              No, treatment for DMO is usually not a one-off injection. Most patients require a series of injections,
+              especially at
+              the beginning, to reduce the swelling in the macula. Treatment often starts with monthly injections and
+              is then adjusted
+              depending on how your eye responds. Some people may need ongoing injections long term to keep the fluid
+              under control,
+              while others may be able to space treatments further apart. Regular monitoring is essential, as DMO can
+              recur if treatment
+              is stopped too early.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q14 -->
+      <details id="q14" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How frequently will I need my eye injections?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              The frequency of your eye injections depends on how your macula responds to treatment. Most patients
+              begin with 4-weekly
+              injections until the fluid in the macula has settled and the condition is stable. Once the macula
+              swelling improves, we
+              gradually extend the interval in 2-week steps—for example, from 4-weekly to 6-weekly, then
+              8-weekly—provided there is no
+              sign of recurrence. Every patient is given a careful trial of extension, but not everyone can tolerate
+              longer gaps
+              between injections. The longest interval we usually extend to is 16 weeks, as long as the eye remains
+              stable. Regular
+              monitoring is essential to keep your vision protected.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q15 -->
+      <details id="q15" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Will I ever be able to stop my injections for DMO?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Yes, it is possible to stop injections for DMO in some patients. This depends on how well your eye
+              responds to treatment
+              and how well your blood sugar levels (BSL) are controlled. If the swelling in the macula settles and
+              your diabetes is
+              well managed, injections may be reduced or even stopped. However, DMO can return, especially if blood
+              sugar control
+              worsens, so regular follow-up is essential. Good diabetes control plays a major role in reducing the
+              need for ongoing
+              treatment.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q16 -->
+      <details id="q16" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Are the injections painful or risky?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              The eye is numbed before the injection, so discomfort is minimal. Most patients tolerate them very well.
+              Serious
+              complications are rare but can include infection or inflammation. Your doctor will explain the risks.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q17 -->
+      <details id="q17" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What are the risks of an eye injection?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Eye injections (such as anti-VEGF injections) are commonly performed and generally very safe, but like
+              any procedure,
+              they carry some risks. The most serious—though rare—risk is infection inside the eye (endophthalmitis),
+              which can
+              threaten vision and requires urgent treatment. Other uncommon risks include bleeding, retinal
+              detachment, inflammation,
+              increased eye pressure, or cataract formation. More common and mild side effects include temporary
+              redness, irritation,
+              watery eyes, or the feeling of something in the eye for a day or two. Your doctor takes careful
+              precautions to minimise
+              these risks, and serious complications are uncommon.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q18 -->
+      <details id="q18" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What should I do after my injection?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              After your injection, your eye may feel slightly irritated or watery for a day or two. It is very
+              important not to rub
+              your eye, as this can increase the risk of infection. You should also avoid swimming, hot tubs, or
+              getting pool or ocean
+              water in your eye for at least one week after the injection. Continue using any prescribed drops as
+              directed, and monitor
+              for symptoms such as increasing pain, worsening vision, or significant redness—if these occur, contact
+              your doctor
+              immediately.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q19 -->
+      <details id="q19" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can controlling my diabetes help my eyes?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Yes. Good control of blood sugar, blood pressure, and cholesterol significantly reduces the risk of
+              progression. Healthy
+              diet, exercise, and regular medical care are very important. Managing your diabetes is one of the best
+              ways to protect
+              your vision.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q20 -->
+      <details id="q20" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can this happen in my other eye?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              It is possible, especially if underlying risk factors are not controlled. Managing blood pressure,
+              diabetes, cholesterol,
+              and avoiding smoking reduces risk. Regular eye checks are important.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q21 -->
+      <details id="q21" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How often should I have my eyes checked?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Most people with diabetes should have an eye exam at least once a year. If changes are detected, visits
+              may be more
+              frequent. Regular monitoring helps detect problems early. Early treatment gives better outcomes.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q22 -->
+      <details id="q22" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can I still drive?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Many people with diabetic retinopathy can continue driving if their vision meets legal standards.
+              However, significant
+              vision loss may affect driving ability. Your doctor can advise you based on your vision tests.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q23 -->
+      <details id="q23" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What should I do if my vision suddenly changes?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              If you notice sudden blurred vision, new floaters, flashes, or a dark curtain over your vision, seek
+              urgent medical
+              attention. Sudden changes may indicate bleeding or retinal detachment. Prompt treatment is important.
+            </p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+  <!-- FOOTER -->
+  <footer class="bg-slatewash-50 border-t border-black/10">
+    <section id="footer" class="w-full bg-slatewash-50 text-black">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+          <div>
+            <h2 class="font-bold mb-4">LOCATION</h2>
+            <ul class="space-y-1 text-black/80">
+              <li>Suite 4A, 250 Pacific Highway, Charlestown NSW 2290</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="font-bold mb-4">APPOINTMENTS</h2>
+            <p class="max-w-sm text-black/80">
+              You may book an appointment with Hunter Ophthalmology at
+              <a class="underline hover:no-underline" href="mailto:reception@hunterophthalmology.com.au">
+                reception@hunterophthalmology.com.au
+              </a><br>
+              <a class="underline hover:no-underline" href="tel:+61241069999">
+                (02) 4106 9999
+              </a>
+            </p>
+            <a href="location.html"
+              class="inline-block mt-4 rounded-lg bg-peach-300 text-black font-bold px-6 py-3 hover:bg-peach-200 transition">
+              Book an appointment ›
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-sm text-black/60">
+          © <span id="footerYear"></span> Hunter Ophthalmology |
+          <a href="privacypolicy.html" class="hover:underline">Privacy Policy</a> |
+          <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  <script>
+    // Feather icons
+      feather.replace();
+  
+      // Accessibility: mark SVG icons as decorative
+      document.querySelectorAll("svg.feather").forEach((svg) => {
+        svg.setAttribute("aria-hidden", "true");
+        svg.setAttribute("focusable", "false");
+      });
+  
+      // Footer year
+      document.getElementById("footerYear").textContent = new Date().getFullYear();
+  
+      // Mobile menu toggle
+      const btn = document.getElementById("mobileMenuBtn");
+      const menu = document.getElementById("mobileMenu");
+  
+      function setExpanded(isOpen) {
+        btn.setAttribute("aria-expanded", String(isOpen));
+      }
+  
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          const isHidden = menu.classList.contains("hidden");
+          menu.classList.toggle("hidden");
+          setExpanded(isHidden);
+        });
+  
+        // Close the mobile menu after clicking a link
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            menu.classList.add("hidden");
+            setExpanded(false);
+          });
+        });
+      }
+  
+      // Accordion: keep only one <details> open at a time
+      document.querySelectorAll(".qa details").forEach((d) => {
+        d.addEventListener("toggle", () => {
+          if (d.open) {
+            document.querySelectorAll(".qa details").forEach((other) => {
+              if (other !== d) other.removeAttribute("open");
+            });
+          }
+        });
+      });
+  
+      // Ensure "Jump to" opens the accordion item before scrolling
+      document.querySelectorAll('a[href^="#q"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          const id = link.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (target && target.tagName.toLowerCase() === "details") {
+            target.setAttribute("open", "");
+          }
+        });
+      });
+  </script>
+  </body>
+  
+  </html>

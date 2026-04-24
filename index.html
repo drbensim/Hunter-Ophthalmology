@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunter Ophthalmology</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Playfair Display (for brand name only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            peach: { 200:"#ffd5b5", 300:"#ffc39e", 500:"#e28d5b" },
+            slatewash: {
+              50: "#eef1f4",
+              100: "#e4e8ec"
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .brand-font {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.5px;
+    }
+
+    .page-pad {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .page-pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-pad {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    :root {
+      --bg-image-opacity: 1;
+      --section-fade-white: rgba(255, 255, 255, 0);
+      --section-overlay-strong: rgba(255, 255, 255, 0);
+      --section-overlay-soft: rgba(255, 255, 255, 0);
+    }
+
+    /* Shared background section system */
+    .image-section {
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+      isolation: isolate;
+    }
+
+    .image-section-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: var(--bg-image-opacity);
+      transform: scale(1.05);
+      z-index: 0;
+    }
+
+    .image-section-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to bottom,
+          var(--section-fade-white) 0%,
+          rgba(255, 255, 255, 0.72) 10%,
+          rgba(255, 255, 255, 0.28) 24%,
+          rgba(255, 255, 255, 0.22) 76%,
+          rgba(255, 255, 255, 0.72) 90%,
+          var(--section-fade-white) 100%),
+        linear-gradient(to right,
+          var(--section-overlay-strong) 0%,
+          rgba(255, 255, 255, 0.46) 45%,
+          var(--section-overlay-soft) 100%);
+      pointer-events: none;
+    }
+
+    .image-section-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HERO */
+    .hero-slider {
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+      isolation: isolate;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out, transform 7s ease;
+      transform: scale(1.02);
+      z-index: 0;
+    }
+
+    .hero-slide.active {
+      opacity: var(--bg-image-opacity);
+      transform: scale(1.08);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to bottom,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0.76) 10%,
+          rgba(255, 255, 255, 0.32) 24%,
+          rgba(255, 255, 255, 0.22) 76%,
+          rgba(255, 255, 255, 0.76) 90%,
+          rgba(255, 255, 255, 1) 100%),
+        linear-gradient(to right,
+          rgba(255, 255, 255, 0.74),
+          rgba(255, 255, 255, 0.42));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Glow emphasis */
+    .glow-bold {
+      font-weight: 700;
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.92);
+      transition: text-shadow 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+      animation: glowBreath 10s infinite ease-in-out;
+    }
+
+    .glow-bold:hover {
+      color: rgba(0, 0, 0, 1);
+      text-shadow:
+        0 0 8px rgba(226, 141, 91, 0.45),
+        0 0 16px rgba(226, 141, 91, 0.35),
+        0 0 26px rgba(226, 141, 91, 0.22);
+    }
+
+    @keyframes glowBreath {
+      0% {
+        opacity: 0.93;
+        text-shadow: 0 0 0 rgba(226, 141, 91, 0);
+      }
+
+      35% {
+        opacity: 1;
+        text-shadow:
+          0 0 7px rgba(226, 141, 91, 0.2),
+          0 0 12px rgba(226, 141, 91, 0.1);
+      }
+
+      70% {
+        opacity: 0.95;
+        text-shadow:
+          0 0 4px rgba(226, 141, 91, 0.1);
+      }
+
+      100% {
+        opacity: 0.93;
+        text-shadow: 0 0 0 rgba(226, 141, 91, 0);
+      }
+    }
+
+    /* CONDITIONS background */
+    .conditions-bg {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      background: #ffffff;
+    }
+
+    .conditions-slide {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://res.cloudinary.com/dtkudhbk4/image/upload/v1772355184/3CFHNVX63GHBOSLE_Cornea_00_nlabjk.jpg');
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.06);
+      opacity: var(--bg-image-opacity);
+      z-index: 0;
+    }
+
+    .conditions-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to bottom,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0.74) 10%,
+          rgba(255, 255, 255, 0.26) 24%,
+          rgba(255, 255, 255, 0.22) 76%,
+          rgba(255, 255, 255, 0.74) 90%,
+          rgba(255, 255, 255, 1) 100%),
+        linear-gradient(to right,
+          rgba(255, 255, 255, 0.72),
+          rgba(255, 255, 255, 0.42));
+    }
+
+    .conditions-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 0.12rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+      color: rgba(0, 0, 0, 0.62);
+      font-weight: 500;
+    }
+
+    @media (min-width: 768px) {
+      .brand-subtitle {
+        font-size: 0.82rem;
+      }
+    }
+
+    .hero-subtitle {
+      margin-top: 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      letter-spacing: 0.18px;
+      color: rgba(0, 0, 0, 0.68);
+      font-weight: 600;
+      max-width: 26rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-subtitle {
+        margin-top: 0.9rem;
+        font-size: 1.15rem;
+      }
+    }
+
+    /* Motto / mission styling */
+    .motto-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .motto-card {
+      position: relative;
+      width: 100%;
+      max-width: 980px;
+      background: linear-gradient(135deg, rgba(255, 245, 238, 0.96), rgba(255, 255, 255, 0.96));
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 1.5rem;
+      padding: 3rem 1.44rem;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      .motto-card {
+        padding: 4rem 2.32rem;
+      }
+    }
+
+    .motto-card::before {
+      content: "“";
+      position: absolute;
+      top: 0.5rem;
+      left: 1.25rem;
+      font-family: "Playfair Display", serif;
+      font-size: 6rem;
+      line-height: 1;
+      color: rgba(226, 141, 91, 0.22);
+      pointer-events: none;
+    }
+
+    .motto-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 6px;
+      background: linear-gradient(to right, rgba(255, 195, 158, 0.2), rgba(226, 141, 91, 0.45), rgba(255, 195, 158, 0.2));
+    }
+
+    .motto-label {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 9999px;
+      background: rgba(255, 213, 181, 0.5);
+      color: rgba(0, 0, 0, 0.72);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .motto-sub {
+      position: relative;
+      z-index: 1;
+      font-size: 0.98rem;
+      line-height: 1.88;
+      letter-spacing: 0.06px;
+      color: rgba(0, 0, 0, 0.82);
+      font-weight: 400;
+    }
+
+    @media (min-width: 640px) {
+      .motto-sub {
+        font-size: 1.08rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .motto-sub {
+        font-size: 1.18rem;
+      }
+    }
+
+    .motto-sub+.motto-sub {
+      margin-top: 1.45rem;
+    }
+
+    .motto-closing {
+      margin-top: 1.7rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.88);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-slatewash-50 border-b border-black/10">
+    <div class="max-w-7xl mx-auto page-pad py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div class="leading-tight">
+        <a href="index.html" class="brand-font font-semibold text-lg hover:opacity-80 transition">
+          Hunter Ophthalmology
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8 text-black/80">
+        <a href="index.html" class="hover:text-black transition">Home</a>
+
+        <div class="relative group">
+          <span
+            class="inline-flex items-center gap-1 cursor-default"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Patient Resources
+            <span class="text-black/60">⌄</span>
+          </span>
+
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                     group-hover:opacity-100 group-hover:visible
+                     group-focus-within:opacity-100 group-focus-within:visible
+                     transition">
+            <div class="min-w-[260px] rounded-xl border border-black/10 bg-white shadow-lg">
+              <a href="patient-information.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-t-xl">
+                Patient Information
+              </a>
+
+              <a href="our-doctors.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                Our Doctors
+              </a>
+
+              <div class="relative group/conditions">
+                <a href="index.html#conditions-treated"
+                  class="flex items-center justify-between px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-b-xl">
+                  Conditions treated
+                  <span class="text-black/50">›</span>
+                </a>
+
+                <div class="absolute top-0 left-full ml-1 opacity-0 invisible z-50
+                           group-hover/conditions:opacity-100 group-hover/conditions:visible
+                           group-focus-within/conditions:opacity-100 group-focus-within/conditions:visible
+                           transition">
+                  <div class="min-w-[340px] rounded-xl border border-black/10 bg-white shadow-lg overflow-hidden">
+                    <a href="cataract.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Cataract</a>
+                    <a href="pterygium.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Pterygium</a>
+                    <a href="glaucoma.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Glaucoma</a>
+                    <a href="age-related-macular-degeneration.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Age-Related Macular Degeneration
+                    </a>
+                    <a href="diabetic-eye-disease.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Diabetic Eye Disease
+                    </a>
+                    <a href="retinal-vein-occlusion.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Retinal Vein Occlusion
+                    </a>
+                    <a href="blepharoplasty.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Blepharoplasty
+                    </a>
+                    <a href="periocular-skin-cancer-excision-and-reconstruction.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Periocular Skin cancer excision &amp; reconstruction
+                    </a>
+                    <a href="ectropion-and-entropion-repair.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Ectropion &amp; Entropion repair
+                    </a>
+                    <a href="botox-for-facial-spasms.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Botox for Facial Spasms
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="referrers.html" class="hover:text-black transition">Referrers</a>
+        <a href="contact.html" class="hover:text-black transition">Contact</a>
+      </nav>
+
+      <!-- Right side button -->
+      <a href="contact.html"
+        class="hidden md:inline-flex rounded-lg bg-peach-300 text-black font-bold px-5 py-2.5 hover:bg-peach-200 transition">
+        Book an appointment
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-black/10 bg-white px-3 py-2"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i data-feather="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-black/10 bg-white">
+      <nav class="max-w-7xl mx-auto page-pad py-4 flex flex-col gap-3 text-black/80">
+        <a href="index.html" class="hover:text-black transition">Home</a>
+        <a href="patient-information.html" class="hover:text-black transition">Patient Information</a>
+        <a href="our-doctors.html" class="hover:text-black transition">Our Doctors</a>
+        <a href="index.html#conditions-treated" class="hover:text-black transition">Conditions treated</a>
+        <a href="referrers.html" class="hover:text-black transition">Referrers</a>
+        <a href="contact.html" class="hover:text-black transition">Contact</a>
+        <a href="contact.html"
+          class="inline-flex w-fit rounded-lg bg-peach-300 text-black font-bold px-5 py-2.5 hover:bg-peach-200 transition">
+          Book an appointment
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-slider py-28">
+    <div class="hero-slide active"
+      style="background-image:url('https://res.cloudinary.com/dtkudhbk4/image/upload/v1772312852/Newcastle_3_mr4gy4.jpg')">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content max-w-7xl mx-auto page-pad">
+      <h1 class="brand-font text-6xl md:text-8xl font-light">
+        Hunter Ophthalmology
+      </h1>
+    </div>
+  </section>
+
+  <!-- MOTTO -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto page-pad">
+      <div class="motto-wrap">
+        <div class="motto-card">
+          <div class="motto-label">Our Motto &amp; Mission</div>
+
+          <p class="motto-sub">
+            We believe that everyone deserves an
+            <span class="glow-bold">equal opportunity</span>
+            to
+            <span class="glow-bold">connect and engage</span>
+            with the world around them.
+          </p>
+
+          <p class="motto-sub">
+            The way we commit to
+            <span class="glow-bold">social equity</span>
+            is by delivering healthcare through
+            <span class="glow-bold">good communication, integrity, precision</span>,
+            and
+            <span class="glow-bold">excellence</span>.
+          </p>
+
+          <p class="motto-sub motto-closing">
+            We just happen to be
+            <span class="glow-bold">Ophthalmologists</span>.
+            Let us be part of your journey to achieve better sight!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section id="conditions-treated" class="conditions-bg py-24">
+    <div class="conditions-slide"></div>
+    <div class="conditions-overlay"></div>
+
+    <div class="max-w-7xl mx-auto page-pad conditions-content">
+      <div class="bg-white/78 backdrop-blur-sm rounded-2xl p-8 ring-1 ring-black/10">
+        <h2 class="text-3xl md:text-4xl font-bold">Conditions treated</h2>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <a href="cataract.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Cataracts</a>
+          <a href="pterygium.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Pterygium</a>
+          <a href="glaucoma.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Glaucoma</a>
+          <a href="age-related-macular-degeneration.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Age-Related
+            Macular Degeneration</a>
+          <a href="diabetic-eye-disease.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Diabetic
+            Eye
+            Disease</a>
+          <a href="retinal-vein-occlusion.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Retinal
+            Vein
+            Occlusion</a>
+          <a href="periocular-skin-cancer-excision-and-reconstruction.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Periocular
+            Skin cancer excision & reconstruction</a>
+          <a href="ectropion-and-entropion-repair.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Eyelid
+            Malposition repair (Ectropion & Entropion repair)</a>
+          <a href="blepharoplasty.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Blepharoplasty</a>
+          <a href="botox-for-facial-spasms.html"
+            class="rounded-xl border border-black/10 bg-peach-200/80 px-4 py-3 hover:bg-peach-300 transition">Botox for
+            Facial Spasms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto page-pad grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <iframe
+        src="https://www.google.com/maps?q=Suite%204A%2C%20250%20Pacific%20Highway%2C%20Charlestown%2C%20NSW%2C%202290&output=embed"
+        class="w-full h-[400px] rounded-2xl ring-1 ring-black/10"></iframe>
+
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Charlestown</h2>
+        <div class="mt-4 h-px w-40 bg-black/20"></div>
+
+        <div class="mt-6 space-y-2 text-lg">
+          <div>Suite 4A, 250 Pacific Highway, Charlestown NSW 2290</div>
+          <div>---</div>
+          <a href="mailto:reception@hunterophthalmology.com.au" class="underline">
+            reception@hunterophthalmology.com.au
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SAME BUILDING -->
+<section class="image-section relative overflow-hidden py-24">
+  <div class="image-section-bg absolute inset-0 bg-cover bg-center opacity-75" style="
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(255,250,248,1) 0%,
+          rgba(255,250,248,0.15) 18%,
+          rgba(255,250,248,0.15) 82%,
+          rgba(255,250,248,1) 100%
+        ),
+        url('https://res.cloudinary.com/dtkudhbk4/image/upload/v1772312846/Newcastle_1_hegh6q.jpg');
+    ">
+  </div>
+
+  <div class="same-building-overlay absolute inset-0"></div>
+
+  <div class="image-section-content relative max-w-6xl mx-auto page-pad">
+    <div
+      class="border-8 border-[#a14b4b] rounded-3xl bg-[#fffaf8]/95 shadow-[12px_12px_0_0_#a14b4b] px-8 py-14 md:px-16 md:py-20 text-center">
+
+      <p class="text-2xl md:text-4xl lg:text-5xl leading-tight font-medium">
+        <span class="font-bold">Hunter Ophthalmology</span> is now in the
+      </p>
+
+      <div
+        class="mt-6 inline-block border-4 border-[#a14b4b] bg-white px-6 py-3 md:px-10 md:py-4 shadow-[6px_6px_0_0_#a14b4b] rotate-[-1deg]">
+        <span class="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-widest text-[#a14b4b]">
+          SAME BUILDING
+        </span>
+      </div>
+
+      <p class="mt-6 text-2xl md:text-4xl lg:text-5xl leading-tight font-medium">
+        as <span class="font-bold">Charlestown Private Hospital</span>
+      </p>
+
+      <p class="mt-8 text-base md:text-lg lg:text-xl text-black leading-relaxed max-w-3xl mx-auto">
+        (...so you will be having your clinic assessment and surgery in the same
+        building on separate days!)
+      </p>
+
+    </div>
+  </div>
+</section>
+
+  <!-- PARKING -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto page-pad">
+      <div class="mt-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">Parking</h2>
+
+        <p class="text-black/80 leading-relaxed mb-6">
+  Parking can be found in the council parking behind the building (see picture below)
+</p>
+
+<p class="text-black/80 leading-relaxed mb-6">
+  <strong>Patient drop off</strong> is available from Pacific Highway, down the ramp, to the lifts in the parking area.
+</p>
+
+        <div class="rounded-2xl overflow-hidden border border-black/10 bg-white">
+          <img
+            src="https://res.cloudinary.com/dtkudhbk4/image/upload/v1776586882/Parking_fgchwa.png"
+            alt="Parking behind the building"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slatewash-50 border-t border-black/10">
+    <section id="footer" class="w-full bg-slatewash-50 text-black">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+          <div>
+            <h2 class="font-bold mb-4">LOCATION</h2>
+            <ul class="space-y-1 text-black/80">
+              <li>Suite 4A, 250 Pacific Highway, Charlestown NSW 2290</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="font-bold mb-4">APPOINTMENTS</h2>
+          <p class="max-w-sm text-black/80">
+  You may book an appointment with Hunter Ophthalmology at
+  <a class="underline hover:no-underline" href="mailto:reception@hunterophthalmology.com.au">
+    reception@hunterophthalmology.com.au
+  </a><br>
+  <a class="underline hover:no-underline" href="tel:+61241069999">
+    (02) 4106 9999
+  </a>
+            </p>
+            <a href="location.html"
+              class="inline-block mt-4 rounded-lg bg-peach-300 text-black font-bold px-6 py-3 hover:bg-peach-200 transition">
+              Book an appointment ›
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-sm text-black/60">
+          © <span id="footerYear"></span> Hunter Ophthalmology |
+          <a href="privacypolicy.html" class="hover:underline">Privacy Policy</a> |
+          <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script>
+    // Feather icons
+    feather.replace();
+
+    // Accessibility: mark SVG icons as decorative
+    document.querySelectorAll("svg.feather").forEach((svg) => {
+      svg.setAttribute("aria-hidden", "true");
+      svg.setAttribute("focusable", "false");
+    });
+
+    // Footer year
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const btn = document.getElementById("mobileMenuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    function setExpanded(isOpen) {
+      btn.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        const isHidden = menu.classList.contains("hidden");
+        menu.classList.toggle("hidden");
+        setExpanded(isHidden);
+      });
+
+      // Close the mobile menu after clicking a link
+      menu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          menu.classList.add("hidden");
+          setExpanded(false);
+        });
+      });
+    }
+
+    // Accordion: keep only one <details> open at a time
+    document.querySelectorAll(".qa details").forEach((d) => {
+      d.addEventListener("toggle", () => {
+        if (d.open) {
+          document.querySelectorAll(".qa details").forEach((other) => {
+            if (other !== d) other.removeAttribute("open");
+          });
+        }
+      });
+    });
+
+    // Ensure "Jump to" opens the accordion item before scrolling
+    document.querySelectorAll('a[href^="#q"]').forEach((link) => {
+      link.addEventListener("click", () => {
+        const id = link.getAttribute("href").slice(1);
+        const target = document.getElementById(id);
+        if (target && target.tagName.toLowerCase() === "details") {
+          target.setAttribute("open", "");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

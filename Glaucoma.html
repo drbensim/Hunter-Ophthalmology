@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Title + Description -->
+  <title>Glaucoma Q&amp;A | Hunter Ophthalmology Charlestown NSW</title>
+  <meta name="description"
+    content="Answers to common glaucoma questions from Hunter Ophthalmology (Charlestown, NSW). Learn what glaucoma is, causes, symptoms, tests, treatment options like SLT laser and trabecular bypass stents, eye drops, side effects, follow-up frequency, and driving advice." />
+
+  <!-- SEO: Canonical (replace with your real URL) -->
+  <link rel="canonical" href="https://www.example.com/glaucoma-qa" />
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Social: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hunter Ophthalmology" />
+  <meta property="og:title" content="Glaucoma Q&A | Hunter Ophthalmology" />
+  <meta property="og:description"
+    content="Clear, practical answers to common glaucoma questions (Charlestown, NSW), including SLT laser and trabecular bypass stents." />
+  <meta property="og:url" content="https://www.example.com/glaucoma-qa" />
+  <meta property="og:image"
+    content="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324786/Glaucoma_z3xs3o.jpg" />
+
+  <!-- Social: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Glaucoma Q&A | Hunter Ophthalmology" />
+  <meta name="twitter:description"
+    content="Clear, practical answers to common glaucoma questions (Charlestown, NSW), including SLT laser and trabecular bypass stents." />
+  <meta name="twitter:image"
+    content="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324786/Glaucoma_z3xs3o.jpg" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              700: "#0f2d0a",
+              800: "#0b2107",
+              900: "#071805",
+            },
+            peach: {
+              200: "#ffd5b5",
+              300: "#ffc39e",
+              500: "#e28d5b",
+            },
+            slatewash: {
+              50: "#eef1f4",
+              100: "#e4e8ec",
+            }
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .brand-font {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 0.12rem;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      color: rgba(0, 0, 0, 0.62);
+      font-weight: 500;
+    }
+
+    .page-pad {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .page-pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .brand-subtitle {
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-pad {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+
+    /* Q&A styling (accordion) */
+    .qa details {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.92);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .qa details+details {
+      margin-top: 14px;
+    }
+
+    .qa summary {
+      cursor: pointer;
+      list-style: none;
+      outline: none;
+      user-select: none;
+    }
+
+    .qa summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .qa .chev {
+      transition: transform 240ms ease;
+    }
+
+    .qa details[open] .chev {
+      transform: rotate(180deg);
+    }
+
+    .qa summary:focus-visible {
+      box-shadow: 0 0 0 4px rgba(226, 141, 91, 0.28);
+      border-radius: 14px;
+    }
+
+    .qa details>div {
+      transition: opacity 200ms ease, transform 200ms ease;
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+
+    .qa details[open]>div {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .qa-img {
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .embed-16x9 {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .embed-16x9 iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .toc-card {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 245, 238, 0.96);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    :root {
+      --header-offset: 96px;
+    }
+
+    .anchor {
+      scroll-margin-top: var(--header-offset);
+    }
+  </style>
+
+  <!-- Structured Data: MedicalClinic -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Hunter Ophthalmology",
+      "url": "https://www.example.com",
+      "telephone": "+61-2-4943-3199",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Smith St",
+        "addressLocality": "Charlestown",
+        "addressRegion": "NSW",
+        "postalCode": "2290",
+        "addressCountry": "AU"
+      },
+      "medicalSpecialty": "Ophthalmology"
+    }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is glaucoma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glaucoma is a condition that damages the optic nerve, usually due to increased pressure inside the eye. The optic nerve carries visual information from your eye to your brain. Over time, this damage can reduce your side (peripheral) vision. It often develops slowly and without pain. Early detection is very important to protect your sight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How did I get glaucoma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glaucoma can develop for several reasons, most commonly from raised eye pressure. Age, family history, certain medical conditions, and sometimes long-term steroid use can increase the risk. In many people, there is no single clear cause. It is not something you caused by doing anything wrong."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I go blind from glaucoma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people with glaucoma do not go blind, especially if it is found early and treated properly. However, untreated glaucoma can lead to significant vision loss. The damage that has already occurred cannot be reversed, but treatment can help prevent further loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What symptoms should I watch for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most types of glaucoma have no early symptoms. Vision loss usually starts in the side vision and happens gradually, so it may go unnoticed. Sudden severe eye pain, blurred vision, headache, or halos around lights can occur in rare acute cases and need urgent attention. Regular eye exams are the best way to detect changes early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is glaucoma diagnosed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glaucoma is diagnosed through a comprehensive eye exam. Your doctor will measure your eye pressure, examine your optic nerve, and check your visual field (side vision). Special scans may also be done to assess nerve health. These painless tests help detect early damage. Monitoring over time is important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tests will I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You may need eye pressure measurements, optic nerve scans (OCT), visual field testing, and corneal thickness measurements. These tests are quick and painless. They help your doctor track any changes over time. Regular testing allows early detection of progression. This helps guide your treatment plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do my eye pressure numbers mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eye pressure is measured in millimeters of mercury (mmHg). Higher pressure can increase the risk of optic nerve damage, but some people develop glaucoma even with normal pressure. This is unrelated to your blood pressure. Your doctor sets a target pressure that is safe for your eyes. The goal of treatment is to keep pressure at or below that level. It’s one part of the overall picture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can glaucoma be cured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glaucoma cannot be cured, and any vision already lost cannot be restored. However, it can usually be controlled with proper treatment. The aim is to prevent further damage. With regular follow-up and consistent treatment, many people maintain useful vision for life. Early diagnosis makes a big difference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is glaucoma treated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glaucoma is treated by lowering the pressure inside the eye to protect the optic nerve. For many suitable patients, Selective Laser Trabeculoplasty (SLT) can be used as a first-line treatment because clinical research has shown it to be safe and effective and, in many cases, allows people to control their glaucoma without needing daily eye drops. One of the most important studies supporting this approach is the LiGHT Trial (published in Ophthalmology in 2023) showing that SLT as initial therapy provided sustained pressure control and good outcomes. If SLT does not lower the pressure enough, or if its effect decreases over time, prescription eye drops are usually started next. If you concurrently have a cataract, a trabecular bypass stent can be placed while you are having your cataract surgery to reduce your intraocular pressure, possibly removing or reducing the need for further eye drops depending on how you respond to the treatment. In some cases, surgery may be recommended if both laser and drops are not sufficient to control the glaucoma."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of using Selective Laser Trabeculoplasty (SLT) laser over drops as a first line therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using SLT as a first-line treatment for glaucoma has several advantages over starting with daily eye drops. SLT can lower eye pressure effectively without the need to remember drops every day, which improves convenience and treatment adherence. It avoids common drop-related side effects such as redness, irritation, dry eyes, and possible systemic effects. SLT is also preservative-free, so it reduces long-term surface damage to the eye that can occur with chronic drop use. Studies such as the LiGHT Trial have shown that many patients treated with SLT first can remain drop-free for several years while maintaining good pressure control. Additionally, SLT can be repeated if needed and does not “burn bridges” for future treatments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a trabecular bypass stent work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A trabecular bypass stent is a tiny medical device placed inside the eye to help lower eye pressure in people with open-angle glaucoma. Normally, fluid inside the eye drains through a natural filter called the trabecular meshwork. In glaucoma, this drain doesn’t work well, causing pressure to build up. The stent creates a small new pathway through this blocked area, allowing fluid to flow out more easily and reducing pressure. It is usually inserted during cataract surgery through a very small incision and is designed to work with the eye’s natural drainage system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I need to use eye drops for life?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In many cases, glaucoma treatment is long-term and may require lifelong use of eye drops. These drops help control eye pressure and protect your vision. It’s important to use them exactly as prescribed. Stopping drops without advice can cause pressure to rise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the side effects of glaucoma medications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some eye drops may cause redness, stinging, dry eyes, or mild irritation. Certain types can affect breathing or heart rate in some patients. Most side effects are manageable. Always tell your doctor about any symptoms you notice. Your medication can often be adjusted if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often do I need check-ups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Follow-up visits depend on how stable your glaucoma is. Most stable patients are reviewed every 6-12 months, while others may be seen less often. Regular monitoring is essential to detect any changes early. Skipping appointments can risk unnoticed progression. Ongoing care protects your sight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I still drive with glaucoma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many people with glaucoma can continue driving, especially if it is detected early and well controlled. However, advanced glaucoma may affect side vision, which is important for safe driving. You must meet legal vision standards to drive. Your doctor can advise you if your vision meets these requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is glaucoma hereditary? Should my family be tested?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, glaucoma can run in families. If you have glaucoma, close relatives such as siblings and children have a higher risk. It’s recommended they have regular comprehensive eye exams. Early detection greatly reduces the risk of vision loss. Family awareness is very important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can lifestyle changes help slow it down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While lifestyle changes cannot cure glaucoma, maintaining overall good health can help. Regular exercise, a healthy diet, and avoiding smoking support eye health. It’s also important to take medications consistently. Protecting your eyes and attending follow-ups are key. Always discuss supplements or changes with your doctor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I forget to take my drops?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you occasionally forget to take your glaucoma drops, use them as soon as you remember—unless it’s almost time for your next dose. Do not double up unless your doctor advises you to. Missing drops repeatedly can allow your eye pressure to rise, which may cause further optic nerve damage without you noticing. Consistency is very important to protect your vision. At our practice, we often use SLT laser treatment to improve compliance and reduce dependence on daily drops where suitable. We also aim to simplify treatment regimens by prescribing combination drops when possible, making it easier for patients to stay on track with their therapy."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body class="bg-white text-black antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-slatewash-50 border-b border-black/10">
+    <div class="max-w-7xl mx-auto page-pad py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div class="leading-tight">
+        <a href="index.html" class="brand-font font-semibold text-lg hover:opacity-80 transition">
+          Hunter Ophthalmology
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8 text-black/80">
+        <a href="index.html" class="hover:text-black transition">Home</a>
+
+        <div class="relative group">
+          <span
+            class="inline-flex items-center gap-1 cursor-default"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Patient Resources
+            <span class="text-black/60">⌄</span>
+          </span>
+
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                     group-hover:opacity-100 group-hover:visible
+                     group-focus-within:opacity-100 group-focus-within:visible
+                     transition">
+            <div class="min-w-[260px] rounded-xl border border-black/10 bg-white shadow-lg">
+              <a href="patient-information.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-t-xl">
+                Patient Information
+              </a>
+
+              <a href="our-doctors.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                Our Doctors
+              </a>
+
+              <div class="relative group/conditions">
+                <a href="index.html#conditions-treated"
+                  class="flex items-center justify-between px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-b-xl">
+                  Conditions treated
+                  <span class="text-black/50">›</span>
+                </a>
+
+                <div class="absolute top-0 left-full ml-1 opacity-0 invisible z-50
+                           group-hover/conditions:opacity-100 group-hover/conditions:visible
+                           group-focus-within/conditions:opacity-100 group-focus-within/conditions:visible
+                           transition">
+                  <div class="min-w-[340px] rounded-xl border border-black/10 bg-white shadow-lg overflow-hidden">
+                    <a href="cataract.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Cataract</a>
+                    <a href="pterygium.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Pterygium</a>
+                    <a href="glaucoma.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Glaucoma</a>
+                    <a href="age-related-macular-degeneration.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Age-Related Macular Degeneration
+                    </a>
+                    <a href="diabetic-eye-disease.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Diabetic Eye Disease
+                    </a>
+                    <a href="retinal-vein-occlusion.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Retinal Vein Occlusion
+                    </a>
+                    <a href="blepharoplasty.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Blepharoplasty
+                    </a>
+                    <a href="periocular-skin-cancer-excision-and-reconstruction.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Periocular Skin cancer excision &amp; reconstruction
+                    </a>
+                    <a href="ectropion-and-entropion-repair.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Ectropion &amp; Entropion repair
+                    </a>
+                    <a href="botox-for-facial-spasms.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Botox for Facial Spasms
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="referrers.html" class="hover:text-black transition">Referrers</a>
+        <a href="contact.html" class="hover:text-black transition">Contact</a>
+      </nav>
+
+      <!-- Right side button -->
+      <a href="contact.html"
+        class="hidden md:inline-flex rounded-lg bg-peach-300 text-black font-bold px-5 py-2.5 hover:bg-peach-200 transition">
+        Book an appointment
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-black/10 bg-white px-3 py-2"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i data-feather="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </header>
+</body>
+
+<!-- MAIN CONTENT -->
+<main class="w-full bg-white">
+  <section class="max-w-7xl mx-auto page-pad py-16 md:py-20">
+    <div class="max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">Glaucoma Q&amp;A</h1>
+      <p class="mt-4 text-lg md:text-xl text-black/70">
+        Clear, practical answers to common glaucoma questions.
+      </p>
+    </div>
+
+    <!-- Jump to -->
+    <div class="mt-10 max-w-4xl toc-card p-6">
+      <h2 class="text-xl md:text-2xl font-semibold">Jump to a question</h2>
+      <p class="mt-2 text-black/70">Tap a question to jump straight to the answer.</p>
+
+      <ul class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2 text-black/85">
+        <li><a class="hover:underline" href="#q1">What is glaucoma?</a></li>
+        <li><a class="hover:underline" href="#q2">How did I get glaucoma?</a></li>
+        <li><a class="hover:underline" href="#q3">Can I go blind from glaucoma?</a></li>
+        <li><a class="hover:underline" href="#q4">What symptoms should I watch for?</a></li>
+        <li><a class="hover:underline" href="#q5">How is glaucoma diagnosed?</a></li>
+        <li><a class="hover:underline" href="#q6">What tests will I need?</a></li>
+        <li><a class="hover:underline" href="#q7">What do my eye pressure numbers mean?</a></li>
+        <li><a class="hover:underline" href="#q8">Can glaucoma be cured?</a></li>
+        <li><a class="hover:underline" href="#q9">How is glaucoma treated?</a></li>
+        <li><a class="hover:underline" href="#q10">What are the benefits of using Selective Laser Trabeculoplasty
+            (SLT) laser over drops as a first line therapy?</a></li>
+        <li><a class="hover:underline" href="#q11">How does a trabecular bypass stent work?</a></li>
+        <li><a class="hover:underline" href="#q12">Will I need to use eye drops for life?</a></li>
+        <li><a class="hover:underline" href="#q13">What are the side effects of glaucoma medications?</a></li>
+        <li><a class="hover:underline" href="#q14">How often do I need check-ups?</a></li>
+        <li><a class="hover:underline" href="#q15">Can I still drive with glaucoma?</a></li>
+        <li><a class="hover:underline" href="#q16">Is glaucoma hereditary? Should my family be tested?</a></li>
+        <li><a class="hover:underline" href="#q17">Can lifestyle changes help slow it down?</a></li>
+        <li><a class="hover:underline" href="#q18">What happens if I forget to take my drops?</a></li>
+      </ul>
+    </div>
+
+    <div class="qa mt-10 max-w-4xl">
+      <!-- Q1 -->
+      <details id="q1" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What is glaucoma?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Glaucoma is a condition that damages the optic nerve, usually due to increased pressure inside the eye.
+              The optic nerve carries visual information from your eye to your brain. Over time, this damage can
+              reduce your side
+              (peripheral) vision. It often develops slowly and without pain. Early detection is very important to
+              protect your sight.
+            </p>
+
+            <div class="qa-img mt-6">
+              <img
+                  src="https://res.cloudinary.com/dtkudhbk4/image/upload/v1772324786/Glaucoma_z3xs3o.jpg"
+                  alt="Glaucoma diagram showing optic nerve damage and changes in vision"
+                  class="w-full h-auto"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+            </div>
+
+            <div class="mt-6">
+              <div class="embed-16x9">
+                <iframe src="https://www.youtube.com/embed/_VtFBnexqm0" title="Glaucoma explained"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q2 -->
+      <details id="q2" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How did I get glaucoma?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Glaucoma can develop for several reasons, most commonly from raised eye pressure. Age, family history,
+              certain medical
+              conditions, and sometimes long-term steroid use can increase the risk. In many people, there is no
+              single clear cause.
+              It is not something you caused by doing anything wrong.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q3 -->
+      <details id="q3" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can I go blind from glaucoma?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Most people with glaucoma do not go blind, especially if it is found early and treated properly.
+              However, untreated glaucoma can lead to significant vision loss. The damage that has already occurred
+              cannot be reversed,
+              but treatment can help prevent further loss.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q4 -->
+      <details id="q4" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What symptoms should I watch for?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Most types of glaucoma have no early symptoms. Vision loss usually starts in the side vision and happens
+              gradually, so it
+              may go unnoticed. Sudden severe eye pain, blurred vision, headache, or halos around lights can occur in
+              rare acute cases
+              and need urgent attention. Regular eye exams are the best way to detect changes early.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q5 -->
+      <details id="q5" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How is glaucoma diagnosed?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Glaucoma is diagnosed through a comprehensive eye exam. Your doctor will measure your eye pressure,
+              examine your optic nerve, and check your visual field (side vision). Special scans may also be done to
+              assess nerve health.
+              These painless tests help detect early damage. Monitoring over time is important.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q6 -->
+      <details id="q6" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What tests will I need?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              You may need eye pressure measurements, optic nerve scans (OCT), visual field testing, and corneal
+              thickness
+              measurements. These tests are quick and painless. They help your doctor track any changes over time.
+              Regular testing
+              allows early detection of progression. This helps guide your treatment plan.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q7 -->
+      <details id="q7" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What do my eye pressure numbers mean?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Eye pressure is measured in millimeters of mercury (mmHg). Higher pressure can increase the risk of
+              optic nerve damage,
+              but some people develop glaucoma even with normal pressure. This is unrelated to you blood pressure.
+              Your doctor sets a “target pressure” that is safe for your eyes. The goal of treatment is to keep
+              pressure at or below that
+              level. It’s one part of the overall picture.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q8 -->
+      <details id="q8" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can glaucoma be cured?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Glaucoma cannot be cured, and any vision already lost cannot be restored. However, it can usually be
+              controlled with
+              proper treatment. The aim is to prevent further damage. With regular follow-up and consistent treatment,
+              many people
+              maintain useful vision for life. Early diagnosis makes a big difference.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q9 -->
+      <details id="q9" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How is glaucoma treated?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Glaucoma is treated by lowering the pressure inside the eye to protect the optic nerve. For many
+              suitable patients,
+              Selective Laser Trabeculoplasty (SLT) can be used as a first-line treatment because clinical research
+              has shown it to be
+              safe and effective and, in many cases, allows people to control their glaucoma without needing daily eye
+              drops. One of
+              the most important studies supporting this approach is the LiGHT Trial (published in Ophthalmology in
+              2023) showing that
+              SLT as initial therapy provided sustained pressure control and good outcomes. If SLT does not lower the
+              pressure enough,
+              or if its effect decreases over time, prescription eye drops are usually started next.
+            </p>
+
+            <p class="mt-4">
+              If you concurrently have a cataract, a trabecular bypass stent can be placed while you are having your
+              cataract surgery
+              to reduce your intraocular pressure, possibly removing or reducing the need for further eye drops
+              depending on how you
+              respond to the treatment.
+            </p>
+
+            <p class="mt-4">
+              In some cases, surgery may be recommended if both laser and drops are not sufficient to control the
+              glaucoma.
+            </p>
+
+            <div class="mt-6">
+              <div class="embed-16x9">
+                <iframe src="https://www.youtube.com/embed/_oHlYfB5RqA"
+                  title="Selective Laser Trabeculoplasty (SLT) for glaucoma"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q10 -->
+      <details id="q10" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">
+              What are the benefits of using Selective Laser Trabeculoplasty (SLT) laser over drops as a first line
+              therapy?
+            </div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Using SLT as a first-line treatment for glaucoma has several advantages over starting with daily eye
+              drops. SLT can lower
+              eye pressure effectively without the need to remember drops every day, which improves convenience and
+              treatment
+              adherence. It avoids common drop-related side effects such as redness, irritation, dry eyes, and
+              possible systemic
+              effects. SLT is also preservative-free, so it reduces long-term surface damage to the eye that can occur
+              with chronic
+              drop use. Studies such as the LiGHT Trial have shown that many patients treated with SLT first can
+              remain drop-free for
+              several years while maintaining good pressure control. Additionally, SLT can be repeated if needed and
+              does not “burn
+              bridges” for future treatments.
+            </p>
+
+            <div class="mt-6">
+              <div class="embed-16x9">
+                <iframe src="https://www.youtube.com/embed/_oHlYfB5RqA" title="Benefits of SLT laser vs glaucoma drops"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q11 -->
+      <details id="q11" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How does a trabecular bypass stent work?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              A trabecular bypass stent is a tiny medical device placed inside the eye to help lower eye pressure in
+              people with
+              open-angle glaucoma. Normally, fluid inside the eye drains through a natural filter called the
+              trabecular meshwork. In
+              glaucoma, this drain doesn’t work well, causing pressure to build up. The stent creates a small new
+              pathway through this
+              blocked area, allowing fluid to flow out more easily and reducing pressure. It is usually inserted
+              during cataract
+              surgery through a very small incision and is designed to work with the eye’s natural drainage system.
+            </p>
+
+            <div class="mt-6">
+              <div class="embed-16x9">
+                <iframe src="https://www.youtube.com/embed/TuZ3EcfpCTM" title="How a trabecular bypass stent works"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q12 -->
+      <details id="q12" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Will I need to use eye drops for life?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              In many cases, glaucoma treatment is long-term and may require lifelong use of eye drops. These drops
+              help control eye pressure and protect your vision. It’s important to use them exactly as prescribed.
+              Stopping drops
+              without advice can cause pressure to rise and worsen your glaucoma.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q13 -->
+      <details id="q13" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What are the side effects of glaucoma medications?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Some eye drops may cause redness, stinging, dry eyes, or mild irritation. Certain types can affect
+              breathing or heart rate in some patients. Most side effects are manageable. Always tell your doctor
+              about any symptoms you
+              notice. Your medication can often be adjusted if needed.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q14 -->
+      <details id="q14" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">How often do I need check-ups?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Follow-up visits depend on how stable your glaucoma is. Most stable patients are reviewed every 6-12
+              months, while others may be seen less often. Regular monitoring is essential to detect any changes
+              early. Skipping
+              appointments can risk unnoticed progression. Ongoing care protects your sight.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q15 -->
+      <details id="q15" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can I still drive with glaucoma?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Many people with glaucoma can continue driving, especially if it is detected early and well controlled.
+              However, advanced glaucoma may affect side vision, which is important for safe driving. You must meet
+              legal vision standards to
+              drive. Your doctor can advise you if your vision meets these requirements.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q16 -->
+      <details id="q16" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Is glaucoma hereditary? Should my family be tested?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              Yes, glaucoma can run in families. If you have glaucoma, close relatives such as siblings and children
+              have a higher risk. It’s recommended they have regular comprehensive eye exams. Early detection greatly
+              reduces the risk of vision
+              loss. Family awareness is very important.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q17 -->
+      <details id="q17" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">Can lifestyle changes help slow it down?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              While lifestyle changes cannot cure glaucoma, maintaining overall good health can help. Regular
+              exercise, a healthy diet, and avoiding smoking support eye health. It’s also important to take
+              medications consistently.
+              Protecting your eyes and attending follow-ups are key. Always discuss supplements or changes with your
+              doctor.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- Q18 -->
+      <details id="q18" class="anchor">
+        <summary class="flex items-start gap-4 p-6">
+          <span class="inline-flex shrink-0 items-center justify-center rounded-full bg-peach-300 text-black font-bold w-10 h-10">Q</span>
+          <div class="flex-1">
+            <div class="font-semibold text-lg md:text-xl">What happens if I forget to take my drops?</div>
+          </div>
+          <span class="chev mt-2 text-black/60"><i data-feather="chevron-down"></i></span>
+        </summary>
+        <div class="px-6 pb-6 -mt-2">
+          <div class="border-t border-black/10 pt-5 text-black/80 leading-relaxed">
+            <p>
+              If you occasionally forget to take your glaucoma drops, use them as soon as you remember—unless it’s
+              almost time for your next dose. Do not double up unless your doctor advises you to. Missing drops
+              repeatedly can allow
+              your eye pressure to rise, which may cause further optic nerve damage without you noticing. Consistency
+              is very important
+              to protect your vision. At our practice, we often use SLT laser treatment to improve compliance and
+              reduce dependence on
+              daily drops where suitable. We also aim to simplify treatment regimens by prescribing combination drops
+              when possible,
+              making it easier for patients to stay on track with their therapy.
+            </p>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slatewash-50 border-t border-black/10">
+    <section id="footer" class="w-full bg-slatewash-50 text-black">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+          <div>
+            <h2 class="font-bold mb-4">LOCATION</h2>
+            <ul class="space-y-1 text-black/80">
+              <li>Suite 4A, 250 Pacific Highway, Charlestown NSW 2290</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="font-bold mb-4">APPOINTMENTS</h2>
+            <p class="max-w-sm text-black/80">
+              You may book an appointment with Hunter Ophthalmology at
+              <a class="underline hover:no-underline" href="mailto:reception@hunterophthalmology.com.au">
+                reception@hunterophthalmology.com.au
+              </a><br>
+              <a class="underline hover:no-underline" href="tel:+61241069999">
+                (02) 4106 9999
+              </a>
+            </p>
+            <a href="location.html"
+              class="inline-block mt-4 rounded-lg bg-peach-300 text-black font-bold px-6 py-3 hover:bg-peach-200 transition">
+              Book an appointment ›
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-sm text-black/60">
+          © <span id="footerYear"></span> Hunter Ophthalmology |
+          <a href="privacypolicy.html" class="hover:underline">Privacy Policy</a> |
+          <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  <script>
+    // Feather icons
+      feather.replace();
+  
+      // Accessibility: mark SVG icons as decorative
+      document.querySelectorAll("svg.feather").forEach((svg) => {
+        svg.setAttribute("aria-hidden", "true");
+        svg.setAttribute("focusable", "false");
+      });
+  
+      // Footer year
+      document.getElementById("footerYear").textContent = new Date().getFullYear();
+  
+      // Mobile menu toggle
+      const btn = document.getElementById("mobileMenuBtn");
+      const menu = document.getElementById("mobileMenu");
+  
+      function setExpanded(isOpen) {
+        btn.setAttribute("aria-expanded", String(isOpen));
+      }
+  
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          const isHidden = menu.classList.contains("hidden");
+          menu.classList.toggle("hidden");
+          setExpanded(isHidden);
+        });
+  
+        // Close the mobile menu after clicking a link
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            menu.classList.add("hidden");
+            setExpanded(false);
+          });
+        });
+      }
+  
+      // Accordion: keep only one <details> open at a time
+      document.querySelectorAll(".qa details").forEach((d) => {
+        d.addEventListener("toggle", () => {
+          if (d.open) {
+            document.querySelectorAll(".qa details").forEach((other) => {
+              if (other !== d) other.removeAttribute("open");
+            });
+          }
+        });
+      });
+  
+      // Ensure "Jump to" opens the accordion item before scrolling
+      document.querySelectorAll('a[href^="#q"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          const id = link.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (target && target.tagName.toLowerCase() === "details") {
+            target.setAttribute("open", "");
+          }
+        });
+      });
+  </script>
+  </body>
+  
+  </html>

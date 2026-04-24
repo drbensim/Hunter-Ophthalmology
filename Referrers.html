@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information For Referrers | Hunter Ophthalmology</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Playfair Display (for brand name only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            peach: { 200: "#ffd5b5", 300: "#ffc39e", 500: "#e28d5b" },
+            slatewash: { 50: "#eef1f4", 100: "#e4e8ec" }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .brand-font {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 0.12rem;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      color: rgba(0, 0, 0, 0.62);
+      font-weight: 500;
+    }
+
+    .page-pad {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .page-pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .brand-subtitle {
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-pad {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-slatewash-50 border-b border-black/10">
+    <div class="max-w-7xl mx-auto page-pad py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div class="leading-tight">
+        <a href="index.html" class="brand-font font-semibold text-lg hover:opacity-80 transition">
+          Hunter Ophthalmology
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8 text-black/80">
+        <a href="index.html" class="hover:text-black transition">Home</a>
+
+        <div class="relative group">
+          <span
+            class="inline-flex items-center gap-1 cursor-default"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Patient Resources
+            <span class="text-black/60">⌄</span>
+          </span>
+
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                     group-hover:opacity-100 group-hover:visible
+                     group-focus-within:opacity-100 group-focus-within:visible
+                     transition">
+            <div class="min-w-[260px] rounded-xl border border-black/10 bg-white shadow-lg">
+              <a href="patient-information.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-t-xl">
+                Patient Information
+              </a>
+
+              <a href="our-doctors.html"
+                class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                Our Doctors
+              </a>
+
+              <div class="relative group/conditions">
+                <a href="index.html#conditions-treated"
+                  class="flex items-center justify-between px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition rounded-b-xl">
+                  Conditions treated
+                  <span class="text-black/50">›</span>
+                </a>
+
+                <div class="absolute top-0 left-full ml-1 opacity-0 invisible z-50
+                           group-hover/conditions:opacity-100 group-hover/conditions:visible
+                           group-focus-within/conditions:opacity-100 group-focus-within/conditions:visible
+                           transition">
+                  <div class="min-w-[340px] rounded-xl border border-black/10 bg-white shadow-lg overflow-hidden">
+                    <a href="cataract.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Cataract</a>
+                    <a href="pterygium.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Pterygium</a>
+                    <a href="glaucoma.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">Glaucoma</a>
+                    <a href="age-related-macular-degeneration.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Age-Related Macular Degeneration
+                    </a>
+                    <a href="diabetic-eye-disease.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Diabetic Eye Disease
+                    </a>
+                    <a href="retinal-vein-occlusion.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Retinal Vein Occlusion
+                    </a>
+                    <a href="blepharoplasty.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Blepharoplasty
+                    </a>
+                    <a href="periocular-skin-cancer-excision-and-reconstruction.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Periocular Skin cancer excision &amp; reconstruction
+                    </a>
+                    <a href="ectropion-and-entropion-repair.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Ectropion &amp; Entropion repair
+                    </a>
+                    <a href="botox-for-facial-spasms.html"
+                      class="block px-4 py-3 text-black/80 hover:bg-slatewash-50 hover:text-black transition">
+                      Botox for Facial Spasms
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="referrers.html" class="hover:text-black transition">Referrers</a>
+        <a href="contact.html" class="hover:text-black transition">Contact</a>
+      </nav>
+
+      <!-- Right side button -->
+      <a href="contact.html"
+        class="hidden md:inline-flex rounded-lg bg-peach-300 text-black font-bold px-5 py-2.5 hover:bg-peach-200 transition">
+        Book an appointment
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-black/10 bg-white px-3 py-2"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i data-feather="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </header>
+</body>
+
+<!-- MAIN -->
+<main class="bg-white">
+  <section class="max-w-7xl mx-auto page-pad py-20">
+    <div class="max-w-3xl">
+      <h1 class="text-3xl font-semibold mb-6">Information For Referrers</h1>
+
+      <p class="text-black/80 leading-relaxed">
+        Hunter Ophthalmology sincerely thanks you for entrusting us with your patients. In return, we are committed to
+        providing them with the highest standard of care, delivered with respect, compassion, and genuine attention to
+        their individual needs.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-10 mb-4">How to refer your patient</h2>
+      <p class="text-black/80 leading-relaxed mb-4">
+        You can refer your patients to us through several means:
+      </p>
+
+      <ul class="list-disc pl-6 space-y-2 text-black/80">
+        <li>Oculo</li>
+        <li>
+          By sending your referral to our email address
+          <a href="mailto:reception@hunterophthalmology.com.au" class="underline hover:no-underline">
+            (reception@hunterophthalmology.com.au)
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-10 mb-4">Urgent consultations</h2>
+      <p class="text-black/80 leading-relaxed">
+        If you require an urgent consultation, please give our rooms a call or text the doctor if you have his mobile
+        number and please send your referral in to us via the above means and we will see your patient as soon as
+        possible.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-10 mb-4">Contact and feedback</h2>
+      <p class="text-black/80 leading-relaxed">
+        Feel free to give us a call on (02) 4106 9999 if you have any issues and/ or the doctor if you have their mobile
+        contact. We gladly
+        welcome any feedback on our service!
+      </p>
+    </div>
+  </section>
+</main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slatewash-50 border-t border-black/10">
+    <section id="footer" class="w-full bg-slatewash-50 text-black">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+          <div>
+            <h2 class="font-bold mb-4">LOCATION</h2>
+            <ul class="space-y-1 text-black/80">
+              <li>Suite 4A, 250 Pacific Highway, Charlestown NSW 2290</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="font-bold mb-4">APPOINTMENTS</h2>
+            <p class="max-w-sm text-black/80">
+              You may book an appointment with Hunter Ophthalmology at
+              <a class="underline hover:no-underline" href="mailto:reception@hunterophthalmology.com.au">
+                reception@hunterophthalmology.com.au
+              </a><br>
+              <a class="underline hover:no-underline" href="tel:+61241069999">
+                (02) 4106 9999
+              </a>
+            </p>
+            <a href="location.html"
+              class="inline-block mt-4 rounded-lg bg-peach-300 text-black font-bold px-6 py-3 hover:bg-peach-200 transition">
+              Book an appointment ›
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-sm text-black/60">
+          © <span id="footerYear"></span> Hunter Ophthalmology |
+          <a href="privacypolicy.html" class="hover:underline">Privacy Policy</a> |
+          <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  <script>
+    // Feather icons
+      feather.replace();
+  
+      // Accessibility: mark SVG icons as decorative
+      document.querySelectorAll("svg.feather").forEach((svg) => {
+        svg.setAttribute("aria-hidden", "true");
+        svg.setAttribute("focusable", "false");
+      });
+  
+      // Footer year
+      document.getElementById("footerYear").textContent = new Date().getFullYear();
+  
+      // Mobile menu toggle
+      const btn = document.getElementById("mobileMenuBtn");
+      const menu = document.getElementById("mobileMenu");
+  
+      function setExpanded(isOpen) {
+        btn.setAttribute("aria-expanded", String(isOpen));
+      }
+  
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          const isHidden = menu.classList.contains("hidden");
+          menu.classList.toggle("hidden");
+          setExpanded(isHidden);
+        });
+  
+        // Close the mobile menu after clicking a link
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            menu.classList.add("hidden");
+            setExpanded(false);
+          });
+        });
+      }
+  
+      // Accordion: keep only one <details> open at a time
+      document.querySelectorAll(".qa details").forEach((d) => {
+        d.addEventListener("toggle", () => {
+          if (d.open) {
+            document.querySelectorAll(".qa details").forEach((other) => {
+              if (other !== d) other.removeAttribute("open");
+            });
+          }
+        });
+      });
+  
+      // Ensure "Jump to" opens the accordion item before scrolling
+      document.querySelectorAll('a[href^="#q"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          const id = link.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (target && target.tagName.toLowerCase() === "details") {
+            target.setAttribute("open", "");
+          }
+        });
+      });
+  </script>
+  </body>
+  
+  </html>
