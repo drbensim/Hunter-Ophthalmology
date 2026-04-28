@@ -23,7 +23,11 @@
         extend: {
           colors: {
             peach: { 200: "#ffd5b5", 300: "#ffc39e", 500: "#e28d5b" },
-            slatewash: { 50: "#eef1f4", 100: "#e4e8ec" }
+            slatewash: { 50: "#eef1f4", 100: "#e4e8ec" },
+            olive: {
+              50: "#e8ebe5",
+              100: "#d4dac9"
+            }
           }
         }
       }
@@ -80,12 +84,12 @@
 
 <body class="bg-white text-black antialiased">
   <!-- NAV -->
-  <header class="sticky top-0 z-50 bg-slatewash-50 border-b border-black/10">
+  <header class="sticky top-0 z-50 bg-olive-50 border-b border-black/10">
     <div class="max-w-7xl mx-auto page-pad py-4 flex items-center justify-between">
       <!-- Brand -->
       <div class="leading-tight">
-        <a href="index.html" class="brand-font font-semibold text-lg hover:opacity-80 transition">
-          Hunter Ophthalmology
+        <a href="index.html" class="hover:opacity-90 transition">
+          <div class="brand-font text-2xl font-light">Hunter Ophthalmology</div>
         </a>
       </div>
 
@@ -275,8 +279,8 @@
 </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slatewash-50 border-t border-black/10">
-    <section id="footer" class="w-full bg-slatewash-50 text-black">
+  <footer class="bg-olive-50 border-t border-black/10">
+    <section id="footer" class="w-full bg-olive-50 text-black">
       <div class="max-w-7xl mx-auto px-6 py-14">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
@@ -296,7 +300,7 @@
                 (02) 4106 9999
               </a>
             </p>
-            <a href="location.html"
+            <a href="contact.html"
               class="inline-block mt-4 rounded-lg bg-peach-300 text-black font-bold px-6 py-3 hover:bg-peach-200 transition">
               Book an appointment ›
             </a>
